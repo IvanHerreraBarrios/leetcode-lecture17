@@ -31,6 +31,12 @@ var numTeams = function(rating) {
         leftDec = 0;
         rightDec = 0;
 
+        //[4,3,2,1]
+        /*
+        leftDec = 2
+        rigthDec = 2
+        */
+
         for (let j = 0; j < i; j++) {
             if (rating[j] < current) {
                 leftInc++;
@@ -52,3 +58,5 @@ var numTeams = function(rating) {
 
     return teams;
 };
+
+
